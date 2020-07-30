@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/todolist.css">
+</head>
+<body>
+    <div id="box">
+        <h2>任务列表</h2>
+        <p>任务总数：【 <span id="total"></span> 】，还有【 <span id="unfinish"></span> 】未完成，<button id="dofinish">完成</button></p>
+        <ul>
+            <li><input type="checkbox"> 需求分析</li>
+        </ul>
+        <p>请输入新任务：<input type="text" id="newTask"> <button id="add">添加</button></p>
+    </div>
+</body>
+<script src="js/todolist.js"></script>
+<script>
+
+   var todolist = new Todolist()
+    todolist.init()
+</script>
+</html>
